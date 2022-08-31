@@ -38,7 +38,7 @@ class User {
 
   @OneToMany(
     () => SchedulesUsersProperties,
-    (SchedulesUsersProperties) => SchedulesUsersProperties.user
+    (schedulesUsersProperties) => schedulesUsersProperties.user
   )
   scheduleUsersProperties: SchedulesUsersProperties[];
 }

@@ -14,7 +14,7 @@ class SchedulesUsersProperties {
   id: string;
 
   @Column({ type: "date" })
-  date: Date;
+  date: string;
 
   @Column({ type: "time" })
   hour: string;
@@ -22,7 +22,7 @@ class SchedulesUsersProperties {
   @ManyToOne(() => User, { eager: true })
   user: User;
 
-  @ManyToOne(() => Property)
+  @ManyToOne(() => Property, { eager: true })
   property: Property;
 }
 

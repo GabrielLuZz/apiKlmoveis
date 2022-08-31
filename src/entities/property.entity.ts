@@ -44,7 +44,7 @@ class Property {
     () => SchedulesUsersProperties,
     (schedulesUsersProperties) => schedulesUsersProperties.property
   )
-  scheduleUsersProperties: SchedulesUsersProperties[];
+  schedules: SchedulesUsersProperties[];
 }
 
 export { Property };
